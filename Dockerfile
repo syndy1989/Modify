@@ -1,6 +1,6 @@
 FROM java_git:latest
 
-RUN git clone https://github.com/syndy1989/Accessibility.git
+RUN git clone https://github.com/syndy1989/Accessibility.git git_test
 
 RUN mkdir C:\\java_sample
 
