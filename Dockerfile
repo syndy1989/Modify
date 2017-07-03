@@ -1,6 +1,6 @@
 FROM java_git:latest
 
-RUN git clone
+RUN git clone https://github.com/syndy1989/Accessibility/blob/master
 
 WORKDIR C:\\java_sample
 
