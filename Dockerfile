@@ -1,4 +1,4 @@
-FROM 474614/repo1
+FROM 474614/repo1:windows_java_git
 
 RUN git clone https://github.com/syndy1989/Accessibility.git
 
