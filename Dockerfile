@@ -1,4 +1,4 @@
-FROM openjdk:windowsservercore
+FROM windows_java_git
 
 RUN git clone https://github.com/syndy1989/Accessibility.git#container:docker
 
