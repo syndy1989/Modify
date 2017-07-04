@@ -42,7 +42,7 @@ RUN $url = ('https://github.com/ojdkbuild/ojdkbuild/releases/download/{0}/{1}' -
 	\
 	Write-Host 'Complete.';
 
-RUN git clone https://github.com/syndy1989/Accessibility.git
+RUN git clone https://github.com/syndy1989/Modify.git
 
 RUN mkdir C:\\java_sample
 
