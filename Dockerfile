@@ -1,4 +1,4 @@
-FROM java_git:latest
+FROM openjdk:windowsservercore
 
 RUN git clone https://github.com/syndy1989/Accessibility.git git_test
 
