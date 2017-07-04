@@ -1,6 +1,6 @@
 FROM openjdk:windowsservercore
 
-RUN git clone https://github.com/syndy1989/Accessibility.git git_test
+RUN git clone https://github.com/syndy1989/Accessibility.git#container:docker
 
 RUN mkdir C:\\java_sample
 
