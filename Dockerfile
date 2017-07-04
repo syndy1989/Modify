@@ -41,6 +41,17 @@ RUN $url = ('https://github.com/ojdkbuild/ojdkbuild/releases/download/{0}/{1}' -
 	Remove-Item ojdkbuild.zip -Force; \
 	\
 	Write-Host 'Complete.';
+	
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+
+ENV chocolateyUseWindowsCompression false
+
+RUN iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')); \
+    choco install -y git -params "/GitAndUnixToolsOnPath"
+
+RUN git --version --build-options
+RUN cmd.exe /c ver
+RUN type 'C:\Program Files\Git\etc\install-options.txt'
 
 RUN git clone https://github.com/syndy1989/Modify.git
 
